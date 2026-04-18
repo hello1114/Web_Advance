@@ -1,16 +1,46 @@
 p{
-    /*color: purple;
-    font-size: 24px;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 85px;
+    color: red;
+    font-size: 20px;
+   /* margin-top:100px;
     margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px; 
+    
+    margin: 100px 150px 100px 80px;
+    
+    margin: 1px;*/
 
-    margin: 100px, 100px,100px;*/
 
-    margin: 100px, 85px ,100px;
 
-    margin: 1px;
+    margin: 25px 50px 75px;
 
-    margin:25px 50px 75px;
+
+}
+
+
+.box{
+width: 300px;
+height: 250px;
+margin: 30px;
+border: dashed ,purple;
+padding: 20px;
+background-color: bisque;
+}
+
+.responsive-image{
+width: 100%;
+max-width: 700px;
+margin: 20px auto;
+border: 10px solid black;
+
+}
+
+
+body{
+background-image: url('../CSS/bigahhduck.jpg');
+background-size: cover;
+background-position: center;
+
+
+
 }
