@@ -1,17 +1,42 @@
-/*ul{
-    list-style-image: url("images/test.png.jpg");
-
-}*/
-
-ul{
+.unordered{
     list-style-type: square;
+    background-color: aqua;
+    padding: 20px;
+    border: 3px dashed black;
+    margin: 20px;
 }
 
-/*ol{
+.ordered{
     list-style-type: upper-roman;
+    background-color: aquamarine;
+    padding: 20px;
+    border: 3px dashed black;
+    margin: 20px;
+}
 
-}*/
+li{
+    background-color: rgb(154, 201, 201);
+    border: 1px solid black;
+    padding: 10px;
+}
 
-ol{
-    list-style-type: lower-alpha;
+th , td{
+    border: solid black;
+    color: red;
+}
+
+th{
+    background-color: black;
+    color: red;
+}
+
+td{
+    background-color: black;
+    color: red;
+}
+
+#text1{
+    background-color: violet;
+    width: 200px;
+    height: 200px;
 }
