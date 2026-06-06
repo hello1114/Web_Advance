@@ -1,0 +1,93 @@
+div.gallery{
+    margin: 5px;
+    border: 1px solid;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover{
+    border: 1px solid #777;
+}
+
+div.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+div.desc{
+    padding: 15px;
+    text-align: center;
+}
+
+
+.sprite{
+    background: url("images/houses.png") no-repeat;
+
+}
+
+.engineers{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background-position: 0px 0px;
+}
+
+.shadows{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background-position: -500px -500px;
+}
+
+.hipsters{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background-position: -500px 0px;
+}
+
+.speedsters{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background-position: 0px -500px;
+}
+
+a[href="https://shkolladigjitale.com/"]{
+    background-color: red;
+}
+
+p[class*="ds"]{
+background-color: blue;
+color: white;
+padding: 20px;
+}
+
+div[id~="ds"]{
+   background-color: green;
+   color: white;
+   padding: 20px;
+}
+
+/*
+^="ds" - kur fillon me ds
+|= "ds" - kur attribute value starton me ds in a dash separated
+*/
+
+img[title^=blue]{
+    border: 5px solid blue;
+}
+
+h1[class|=heading]{
+    background-color: purple;
+    padding: 20px;
+    color: white;
+}
+
+input[readonly]{
+    border: 3px solid crimson;
+}
+
+input[placeholder$="name"]{
+    border: 3px solid red;
+}
