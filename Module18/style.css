@@ -1,0 +1,35 @@
+div#translate{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    /* translate = Change Position
+    transform: translate(100px, 50px); */
+    /* rotate = rotate figure(including text)
+    transform: rotate(180deg); */
+    /* scale = multiply scale by number
+    transform: scale(3); */
+    /* scaleX = change width
+    transform: scaleX(2);*/
+    /* scaleY = change height
+    transform: scaleY(2px); */
+    /* scaleX -# = change diagonal way
+    transform: scaleX(-40deg);*/
+    /* transform: rotatex(130deg) = rotate foward
+    transform: rotateX(130deg);*/
+    /* transform: rotateY(130deg) = rotate to the side
+    transform: rotateY(130deg); */
+    /*transform: rotateZ(140deg);
+    transform: rotateZ(140deg); */
+    /* tranzicionet*/
+    transition: 3s ease-in-out, border-radius 5s;
+    transition-delay: 2s;
+
+}
+
+#translate:hover{
+    background-color: red;
+    border-radius: 50%;
+}
