@@ -1,0 +1,109 @@
+.Container{
+    display: flex;
+    background: red;
+}
+
+.Container div{
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.Container div :nth-child(1){
+    order: 2;
+
+}
+
+.Container div :nth-child(2){
+    order: 3;
+
+}
+
+.Container div :nth-child(3){
+    order: 0;
+
+}
+
+.Container div :nth-child(4){
+    order: 1;
+
+}
+
+.Container2{
+    display: flex;
+    background: blue;
+    flex-direction: column-reverse;
+}
+
+.Container2 div{
+   background-color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 35px;
+}
+
+
+.Container3{
+    display: flex;
+    background: red;
+    flex-direction: row;
+}
+
+.Container3 div{
+   background-color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.Container3 div :nth-child(1){
+    flex-grow: 4;
+}
+
+.Container4{
+    display: flex;
+    background: orange;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+.Container4 div{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 35px;
+    width: 30%;
+}
+
+
+.Container5{
+    display: flex;
+    background: yellow;
+    flex-direction: row;
+
+}
+
+.Container5 div{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.Container6{
+    display: flex;
+    background: gray;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.Container6 div{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 35px;
+}
+
