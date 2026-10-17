@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="nav-controls">
+        <ul class="navigation-bar" id="navBar" aria-hidden="true" inert>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Parts & Tools</a></li>
+            <li><a href="#">Set an appointment</a></li>
+            <li><a href="#">Our Locations</a></li>
+        </ul>
+
+
+
+
+
+        <button class="toggle-btn" id="toggleNav" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navBar"><img src="css/icon.logo.png" alt="" ></button>
+    </header>
+
+<main class="maincontent">
+    <h1>TORQUELINE</h1>
+    <h3>The Right Parts. The Right Fit. Every Time.</h3>
+    <p class="intro-copy">Welcome to <strong>TorqueLine</strong>, your trusted destination for quality auto parts and automotive solutions. Whether you're maintaining your daily driver, repairing a work vehicle, or upgrading your ride, we make it easier to find the parts you need.</p>
+    <p class="intro-promise"><strong>Quality parts. Competitive prices. Reliable service.</strong></p>
+    <nav class="content-actions" aria-label="Quick links">
+        <a class="content-button content-button-primary" href="#parts">Shop Auto Parts</a>
+        <a class="content-button" href="#contact">Contact Us</a>
+    </nav>
+
+    <section class="content-section" id="parts">
+        <h2>Everything Your Vehicle Needs</h2>
+        <p>At TorqueLine, we offer a wide range of automotive parts for different makes and models. Our goal is simple: help you find reliable parts without the hassle.</p>
+        <ul>
+            <li><strong>Engine &amp; Transmission Parts</strong></li>
+            <li><strong>Brake &amp; Suspension Components</strong></li>
+            <li><strong>Filters &amp; Maintenance Parts</strong></li>
+            <li><strong>Electrical &amp; Lighting</strong></li>
+            <li><strong>Body &amp; Exterior Parts</strong></li>
+            <li><strong>Accessories &amp; More</strong></li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Quality You Can Count On</h2>
+        <p>Your vehicle deserves dependable parts. That's why we focus on offering products from trusted manufacturers and suppliers.</p>
+        <p>From routine maintenance to major repairs, TorqueLine is here to help you keep your vehicle performing at its best.</p>
+        <h3 class="section-subtitle">Built for the Road</h3>
+        <p>We believe buying auto parts should be simple, straightforward, and reliable. Our team is ready to help you find the right part for your vehicle and get you back on the road.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Why Choose TorqueLine?</h2>
+        <ul>
+            <li><strong>Reliable Parts:</strong> Quality products selected with performance and durability in mind.</li>
+            <li><strong>Expert Assistance:</strong> Need help finding a part? Our team can help you identify what fits your vehicle.</li>
+            <li><strong>Competitive Prices:</strong> Get the parts you need at prices that make sense.</li>
+            <li><strong>Customer First:</strong> We're committed to making every purchase simple and hassle-free.</li>
+        </ul>
+    </section>
+
+    <section class="content-section contact-section" id="contact">
+        <h2>Need a Part?</h2>
+        <p>Tell us what you're looking for and we'll help you find the right solution.</p>
+        <p class="vehicle-details"><strong>Make. Model. Year. Part.</strong></p>
+        <p>That's all you need to get started.</p>
+        <a class="content-button content-button-primary" href="#parts">Find Your Parts</a>
+    </section>
+
+    <footer class="content-footer">
+        <h2>Keep Your Vehicle Moving.</h2>
+        <p><strong>TorqueLine — Parts You Can Rely On.</strong></p>
+    </footer>
+</main>
+
+    
+
+
+
+    <script>
+        const toggleNav = document.getElementById('toggleNav');
+        const navBar = document.getElementById('navBar');
+
+        toggleNav.addEventListener('click', () => {
+            const isOpen = toggleNav.getAttribute('aria-expanded') === 'true';
+
+            toggleNav.setAttribute('aria-expanded', String(!isOpen));
+            toggleNav.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation');
+            navBar.classList.toggle('is-visible', !isOpen);
+            navBar.setAttribute('aria-hidden', String(isOpen));
+            navBar.inert = isOpen;
+        });
+    </script>
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Left Column: Form -->
+    <div class="footer-form">
+      <h3>Stay Connected</h3>
+      <p>Subscribe for updates or send us a message.</p>
+
+      <form>
+        <input type="email" placeholder="Your email" required>
+        <textarea placeholder="Your message (optional)"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Right Column: Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+
+      <div class="social">
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Your Company. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
